@@ -66,8 +66,16 @@
 						this.total=parseInt(book_rankData.data.length);
 						console.log(book_rankData.data.length);
 						console.log(this.bookRankData);
-		                  
-		               
+						let tempsql;
+		                /* for (let _item in this.bookRankData) {
+			  //console.log(_item);
+			  if(this.bookRankData[_item].products.length>0){
+		  	                 tempsql+=`INSERT INTO book_rank
+	(word, productName, productUrl, productText)
+	VALUES ( '${this.bookRankData[_item].word}', '${this.bookRankData[_item].products[0].productName}', '${this.bookRankData[_item].products[0].imgUrl}', '');`;
+	}
+						} */
+		               console.log(tempsql);
 		             }
 		},
 		mounted() {
